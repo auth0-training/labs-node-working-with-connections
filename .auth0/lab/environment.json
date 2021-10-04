@@ -2,7 +2,8 @@
   "name": "Lab Node Template",
   "version":"0.0.1",
   "resources": "resources.yml",
-  "postConfigureTour": ".auth0/lab/guides/main.tour",
+  "unauthenticatedTour": ".auth0/lab/guides/signin.tour",
+  "postConfigureTour": ".auth0/lab/guides/working-with-connections.tour",
   "clients": [
     {
       "name":"Lab: SPA",

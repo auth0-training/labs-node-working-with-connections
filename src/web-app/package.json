@@ -1,0 +1,45 @@
+{
+  "name": "labs-node-working-with-connections",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth0 Labs Sample Web Application",
+  "license": "MIT",
+  "author": "Auth0",
+  "bugs": {
+    "url": "https://github.com/auth0-training/labs-node-working-with-connections/issues"
+  },
+  "homepage": "https://github.com/auth0-training/labs-node-working-with-connections#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auth0-training/labs-node-working-with-connections.git"
+  },
+  "scripts": {
+    "start": "PORT=$npm_package_config_port SESSION_SECRET=$npm_package_config_session_secret node index"
+  },
+  "config": {
+    "port": 7000,
+    "session_secret": "e6de1374433dde92a5bae567b56b01de32ad0d4f0115b7675f5b985720210f4c"
+  },
+  "keywords": [
+    "auth0",
+    "openid",
+    "oidc",
+    "auth",
+    "authentication",
+    "samples",
+    "tools",
+    "labs"
+  ],
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cookie-parser": "~1.4.5",
+    "debug": "~4.3.2",
+    "dotenv": "10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.5.0",
+    "express-session": "^1.17.2",
+    "http-errors": "~1.8.0",
+    "morgan": "~1.10.0",
+    "pug": "3.0.2"
+  }
+}

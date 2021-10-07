@@ -6,13 +6,31 @@
       "file": "README.md",
       "line": 1,
       "title": "What you'll do",
+      "description": "## Here's what you'll do:  \n\n*   Enable Twitter as a social connection for your Web App\n*   Create a new Auth0 Database\n*   Add new users to the database using bulk migration\n\nA connection is a relationship between Auth0 and a source of users, which may include identity providers (such as Google or LinkedIn), databases, or passwordless authentication methods. Auth0 sits between your application and its sources of users, which adds a level of abstraction so your application is isolated from any changes to and idiosyncrasies of each source's implementation."
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Enable Twitter as a social connection for your web app",
       "description": "staged"
     },
     {
       "file": "README.md",
       "line": 1,
-      "title": "Work with connections",
-      "description": "staged"
+      "title": "Test the default Auth0 database connection",
+      "description": ""
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Create a new Auth0 database",
+      "description": ""
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Add new users to the database using bulk migration",
+      "description": ""
     },
     {
       "file": "README.md",

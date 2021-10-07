@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "0: signin",
+  "title": "0: Sign in to Auth0",
   "steps": [
     {
       "file": "README.md",

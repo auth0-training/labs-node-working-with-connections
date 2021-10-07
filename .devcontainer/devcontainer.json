@@ -15,7 +15,7 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"EditorConfig.EditorConfig",
-    	"esbenp.prettier-vscode",
+    "esbenp.prettier-vscode",
 		"hjb2012.vscode-es6-string-html",
 		"vsls-contrib.codetour",
 		"mikestead.dotenv",
@@ -27,7 +27,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// Use this to install dependencies for the lab only
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "npm install && npm run init",
 	// Use this to install dependencies for the lab and sample apps in the source directory
 	//"postCreateCommand": "npm install && npm run init",
 

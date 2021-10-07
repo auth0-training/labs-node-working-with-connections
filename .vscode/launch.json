@@ -4,28 +4,27 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    // example
-    // {
-    //   "type": "node", //node process
-    //   "request": "launch", // start
-    //   "name": "Launch API", // menu name
-    //   "skipFiles": [
-    //     "<node_internals>/**" // magic files releated to node ignore
-    //   ],
-    //   "runtimeExecutable": "npm", // use npm to start the node process
-    //   "runtimeArgs": ["run", "api:start"], // pass these parameters to npm
-    //   "port": 9005, // use this port for the debugger
-        // "presentation": {
-        //   "hidden":true //hide from debug menu
-        // }
-    // },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Web App",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "web-app:start"],
+      "port": 9007,
+      "presentation": {
+          "hidden":true //hide from debug menu
+        }
+    },
   ],
   "compounds": [// allow you to start multiple apps
-    // {
-    //   "name": "Launch All", // menu name
-    //   "configurations": [ // list of things to launch
-    //     "Launch API" // as many named configurations as needed
-    //   ]
-    // }
+    {
+      "name": "Launch All", // menu name
+      "configurations": [ // list of things to launch
+        "Launch Web App" // as many named configurations as needed
+      ]
+    }
   ]
 }

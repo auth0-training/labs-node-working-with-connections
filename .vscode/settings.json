@@ -1,5 +1,7 @@
 {
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
   "codetour.promptForWorkspaceTours": false,
   "codetour.showMarkers": false,
-  "codetour.customTourDirectory": ".auth0/lab/guides"
+  "codetour.customTourDirectory": ".auth0/lab/guides",
 }

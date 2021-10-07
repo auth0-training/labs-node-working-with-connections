@@ -1,0 +1,10 @@
+clients: # Add other client settings https://auth0.com/docs/api/management/v2#!/Clients/post_clients
+  -
+    name: "Lab: Web App"
+    app_type: "regular_web"
+    jwt_configuration:
+     alg: "RS256"
+    callbacks:
+      - "http://localhost:7000/callback"
+    allowed_logout_urls:
+      - "http://localhost:7000"

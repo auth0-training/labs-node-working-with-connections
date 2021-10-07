@@ -1,19 +1,22 @@
 {
-  "name": "lab-node-template",
+  "name": "lab-node-working-with-connections",
   "version": "1.1.0",
-  "description": "An auth0 training lab template",
+  "description": "An auth0 training lab on working with connections",
   "license": "MIT",
   "author": "Auth0",
   "bugs": {
-    "url": "https://github.com/auth0-training/labs-node-template/issues"
+    "url": "https://github.com/auth0-training/labs-node-working-with-connections/issues"
   },
-  "homepage": "https://github.com/auth0-training/labs-node-template#readme",
+  "homepage": "https://github.com/auth0-training/labs-node-working-with-connections#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/auth0-training/labs-node-template.git"
+    "url": "git+https://github.com/auth0-training/labs-node-working-with-connections.git"
   },
   "scripts": {
-
+    "init": "concurrently \"npm:init:dependencies\"",
+    "init:dependencies": "concurrently \"npm:web-app:dependencies\"",
+    "web-app:start": "npm start --prefix ./src/web-app",
+    "web-app:dependencies": "npm install --prefix ./src/web-app"
   },
   "keywords": [
     "auth0",

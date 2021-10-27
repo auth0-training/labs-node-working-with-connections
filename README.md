@@ -2,7 +2,7 @@
 
 # Lab Node Working with Connections
 
-An auth0 training lab on using 3rd party social applications for authentication in an express application.
+A connection is a relationship between Auth0 and a source of users. In this hands-on lab, learners will practice the necessary steps to enable a Social connection.  
 
 > Note: This lab template is an experimental release, and is built on a best-efforts basis by some Auth0 developers in their available innovation time. It is open-source licensed and free to use, and is not covered by any Auth0 Terms of Service or Agreements. If you have issues with this template you can engage with the project's developer community through the repository GitHub Issues list, or contribute fixes and enhancements of your own via a Pull Request.
 ### Requirements
@@ -24,7 +24,7 @@ To get started using this lab, ensure you have met the minimum [requirements](#r
 2. Start Docker Desktop.
 3. Open the directory containing the source code in VSCode.
 4. When prompted to reopen the project in a development container, select **Reopen in Container**.
-  ![Devcontainer Prompt](./.auth0/lab/guides/images/devcontainer-prompt.gif?raw=true)
+  ![Devcontainer Prompt](https://cdn.auth0.com/website/a0fun/v2/devcontainer-prompt.gif?raw=true)
 
 This will build an image containing all the tools needed to complete this lab. A container will be started and VSCode will connect to it.
 

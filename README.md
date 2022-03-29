@@ -2,7 +2,7 @@
 
 # Lab Node Working with Connections
 
-A connection is a relationship between Auth0 and a source of users. In this hands-on lab, learners will practice the necessary steps to enable a Social connection.  
+A connection is a relationship between Auth0 and a source of users. In this hands-on lab, learners will practice the necessary steps to enable a Social connection.
 
 > Note: This lab template is an experimental release, and is built on a best-efforts basis by some Auth0 developers in their available innovation time. It is open-source licensed and free to use, and is not covered by any Auth0 Terms of Service or Agreements. If you have issues with this template you can engage with the project's developer community through the repository GitHub Issues list, or contribute fixes and enhancements of your own via a Pull Request.
 ### Requirements
@@ -11,7 +11,7 @@ You'll need an Auth0 account. If you do not already have one, you can create a f
 
 This lab assumes the user is using [Visual Studio Code](https://code.visualstudio.com/download) and [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
-The [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension needs to be installed in VSCode.
+The [Remote - Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension needs to be installed in VSCode.
 
 ### Getting Started
 

@@ -1,6 +1,6 @@
 {
   "name": "Lab Node Working with Connections",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "resources": "resources.yml",
   "unauthenticatedTour": ".auth0/lab/guides/signin.tour",
   "postConfigureTour": ".auth0/lab/guides/working-with-connections.tour",

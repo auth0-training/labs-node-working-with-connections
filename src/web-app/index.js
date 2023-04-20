@@ -48,6 +48,7 @@ app.use(
     baseURL: APP_URL,
     issuerBaseURL: ISSUER_BASE_URL,
     clientID: CLIENT_ID,
+    authRequired: false,
   })
 );
 

@@ -6,7 +6,7 @@ clients: # Add other client settings https://auth0.com/docs/api/management/v2#!/
      alg: "RS256"
     callbacks:
       - "http://localhost:37500/callback"
-      - https://##CODESPACE_NAME##-37500.app.github.dev/callback
+      - https://##CODESPACE_NAME##-37500.##GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN##/callback
     allowed_logout_urls:
       - "http://localhost:37500"
-      - https://##CODESPACE_NAME##-37500.app.github.dev
+      - https://##CODESPACE_NAME##-37500.##GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN##

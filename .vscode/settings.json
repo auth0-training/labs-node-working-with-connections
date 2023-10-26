@@ -1,5 +1,5 @@
 {
-  "comments.maxHeight": false,  
+  "comments.maxHeight": false,
   "editor.minimap.enabled": false,
   "editor.formatOnSave": false,
     // Enable per-language
@@ -22,5 +22,8 @@
   "workbench.sideBar.location": "right",
   "codetour.promptForWorkspaceTours": false,
   "codetour.showMarkers": false,
-  "codetour.customTourDirectory": ".auth0/lab/guides"
+  "codetour.customTourDirectory": ".auth0/lab/guides",
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ]
 }

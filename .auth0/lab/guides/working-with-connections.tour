@@ -10,7 +10,7 @@
       "file": "",
       "line": 1,
       "title": "What you'll do",
-      "description": "## Here's what you'll do:  \n\n*   Enable Twitter as a social connection for your Web App\n*   Create a new Auth0 Database\n*   Add new users to the database using bulk migration\n\nA connection is a relationship between Auth0 and a source of users, which may include identity providers (such as Google or LinkedIn), databases, or passwordless authentication methods. Auth0 sits between your application and its sources of users, which adds a level of abstraction so your application is isolated from any changes to and idiosyncrasies of each source's implementation."
+      "description": "## Here's what you'll do:  \n\n*   Enable GitHub as a social connection for your Web App\n*   Create a new Auth0 Database\n*   Add new users to the database using bulk migration\n\nA connection is a relationship between Auth0 and a source of users, which may include identity providers (such as Google or LinkedIn), databases, or passwordless authentication methods. Auth0 sits between your application and its sources of users, which adds a level of abstraction so your application is isolated from any changes to and idiosyncrasies of each source's implementation."
     },
     {
       "file": "",
@@ -60,7 +60,7 @@
       "file": "",
       "line": 1,
       "title": "Recap",
-      "description": "## Recap\n\nIn this lab you:\n\n*   Enabled Twitter as a social connection for your Web App.\n*   Created a new Auth0 Database\n*   Added the User Import / Export Extension to your tenant\n*   Imported new users to the new database using bulk migration/user import."
+      "description": "## Recap\n\nIn this lab you:\n\n*   Enabled GitHub as a social connection for your Web App.\n*   Created a new Auth0 Database\n*   Added the User Import / Export Extension to your tenant\n*   Imported new users to the new database using bulk migration/user import."
     }
   ]
 }

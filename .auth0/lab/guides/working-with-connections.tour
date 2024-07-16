@@ -4,7 +4,17 @@
   "steps": [
     {
       "title": "Set Up Tenant and Local Configurations for this Lab",
-      "description": "## Set Up Tenant and Local Configurations for this Lab\n\n\n1. #### Click [here](command:auth0.lab.tenantConfigure) to ensure that your Auth0 tenant is configured appropriately for this lab\n    Wait until you see the message that `resources.xml` has been successfully deploy before continuing to the next step.\n    ![resources deployed message](https://cdn.auth0.com/website/a0fun/v2/resources.png) \n1. #### Click [here](command:auth0.lab.localConfigure) to ensure that your application configurations are set locally (creates `.env` file under `src/web-app`).\n"
+      "description": "## Set Up Tenant and Local Configurations for this Lab\n\n\n1. #### Click [here](command:auth0.lab.tenantConfigure) to ensure that your Auth0 tenant is configured appropriately for this lab (Note: this will update the *Callback URL* for the *Lab: Web App* application in your tenant). \n    Wait until you see the message that `resources.xml` has been successfully deploy before continuing to the next step.\n    ![resources deployed message](https://cdn.auth0.com/website/a0fun/v2/resources.png) \n1. #### Click [here](command:auth0.lab.localConfigure) to ensure that your application configurations are set locally (creates `.env` file under `src/web-app`).\n",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 131
+        },
+        "end": {
+          "line": 4,
+          "character": 226
+        }
+      }
     },
     {
       "file": "",

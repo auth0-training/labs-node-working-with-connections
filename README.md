@@ -1,12 +1,13 @@
-[![Auth0 Training](https://cdn.auth0.com/website/training/labs/ilt/auth0training-okta.png "Auth0 Training by Okta")](https://training.auth0.com)
-
 # Lab Node Working with Connections
 
-A connection is a relationship between Auth0 and a source of users. In this hands-on lab, learners will practice the necessary steps to enable a Social connection.
+A connection is a relationship between Auth0 and a source of users. In this [Okta Training](https://www.okta.com/training/) hands-on lab, learners will practice the necessary steps to enable a Social connection.
 
 ## Requirements
 
-1. A GitHub account: Our labs use GitHub Codespaces, so you'll need a GitHub account to access them. Create a free account [here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
+1. A GitHub account with Codespaces access (you can use the free plan, which gives you 60 hours of use per month). Create a free account [here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
+
+    **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
+
 2. An Auth0 account: You'll also need an Auth0 account. If you do not already have one, you can create a free one [here](https://auth0.com/signup).
 
 ## Accessing and Working with Auth0 Labs

@@ -1,6 +1,9 @@
-#  [Okta Training](https://www.okta.com/training/) Lab: Passwords Are So Passé: Secure Your App with Passkeys
+![img](https://cdn.auth0.com/website/auth0-training/auth0-labs-ext/oktane24.png)
+# Lab: Passwords Are So Passé: Secure Your App with Passkeys
 
 Future-proof your applications with phishing-resistant passkeys, reduce login friction for your users, and meet security compliance standards.
+
+In this [Okta Training](https://www.okta.com/training/), you'll learn how to enable and configure passkeys for an Auth0 database connection.
 
 
 ## Requirements

@@ -1,6 +1,7 @@
-# Lab Node Working with Connections
+#  [Okta Training](https://www.okta.com/training/) Lab: Passwords Are So Passé: Secure Your App with Passkeys
 
-A connection is a relationship between Auth0 and a source of users. In this [Okta Training](https://www.okta.com/training/) hands-on lab, learners will practice the necessary steps to enable a Social connection.
+Future-proof your applications with phishing-resistant passkeys, reduce login friction for your users, and meet security compliance standards.
+
 
 ## Requirements
 

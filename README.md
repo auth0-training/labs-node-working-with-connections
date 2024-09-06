@@ -3,7 +3,7 @@
 
 Future-proof your applications with phishing-resistant passkeys, reduce login friction for your users, and meet security compliance standards.
 
-In this [Okta Training](https://www.okta.com/training/), you'll learn how to enable and configure passkeys for an Auth0 database connection.
+In this [Okta Training](https://www.okta.com/training/) hands-on lab, you'll learn how to enable and configure passkeys for an Auth0 database connection.
 
 
 ## Requirements

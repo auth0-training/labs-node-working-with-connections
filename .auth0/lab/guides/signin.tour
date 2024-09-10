@@ -1,7 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "0: Sign in to Auth0",
-  "nextTour": "1: Working with Connections",
+  "nextTour": "1: Enabling Passkeys for Your Database Connection",
   "steps": [
     {
       "file": "",

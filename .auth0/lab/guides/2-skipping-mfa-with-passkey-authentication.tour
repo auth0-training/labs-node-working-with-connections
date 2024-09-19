@@ -1,0 +1,52 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2: Skipping MFA with Passkey Authentication",
+  "steps": [
+    {
+      "title": "Background",
+      "description": "## Background\n\nIf MFA is enabled on your tenant, an end user may be prompted to complete an MFA challenge after authenticating with a passkey based on settings and risk assessment.\n\nThe default behavior is to require the completion of an MFA challenge regardless if the authentication method used was a password or a passkey. Given the high level of security passkeys provide, you may want to skip MFA for users that have authenticated with a passkey in order to reduce friction. This can be achieved by using a post-login Action.\n\n### Next you will:\n* Enable and configure MFA on your Auth0 tenant.\n* Write and deploy a post-login Action that skips MFA if an end user has authenticated with a passkey.\n* Test the passkey login flow to confirm MFA is skipped."
+    },
+    {
+      "title": "Enable and configure MFA on your Auth0 tenant",
+      "description": "## Enable and configure MFA on your tenant\n1. In your Auth0 tenant, go to **Security** > **Multi-factor Auth**.\n2. In the Factors section, toggle on **One-time Password**.\n3. In the Define policies section under **Require Multi-factor Auth**, select **Always**.\n4. Scroll down to Additional Settings and toggle on **Customize MFA Factors using Actions**.\n5. Select **Save**."
+    },
+    {
+      "title": "Create a new post-login Action",
+      "description": "## Create a new post-login Action\n1. Within your Auth0 tenant, go to **Actions** > **Flows**.\n2. Select **Login**.\n3. In the Add Action panel, select **Custom**.\n4. Select **Create Action**. (**Note:** If you already have already created at least one Action on this tenant, you will instead see a **+** button to create a new Action, and you will need to subsequently select **Build from scratch**).\n5. In the Create Action form, enter **Skip MFA with Passkey Authentication** as the **Name**.\n6. Leave the rest of the fields as the default values, and select **Create**."
+    },
+    {
+      "file": ".auth0/lab/skipMFA.js",
+      "description": "## Write and deploy a post-login Action that skips MFA\n1. Copy the highlighted Node.js code above, and replace the contents of the code editor in your Auth0 tenant.\n2. Select **Save Draft**.\n3. Select **Deploy**.",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 17,
+          "character": 4
+        }
+      }
+    },
+    {
+      "title": "Add the post-login Action to your login flow",
+      "description": "## Test the passkey login flow\n1. In your Auth0 tenant, where you just deployed your post-login Action, select the **Back to flow** link.\n2. From the Add Action panel, select **Custom**.\n3. You should now see your newly deployed Action in this list. Select and drag it into the Login flow (a *Drop here* hint should appear where you can drag it).\n4. Select **Apply**."
+    },
+    {
+      "title": "Test the passkey login flow",
+      "description": "## Test the passkey login flow\n1. Your web app should still be running from the previous section. If not, click [here](command:workbench.action.debug.start) to launch the application locally.\n    - Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open it in your browser.\n\n1. Select the **Login** link in the web app.\n1. Select the **Email Address** box, and you should notice the autofill for your browser pop up.\n1. Select the passkey you generated previously from the autofill menu, and authenticate with it.\n1. You should now be logged in without being challenged for MFA!\n"
+    },
+    {
+      "title": "Test the password login flow",
+      "description": "# Test the password login flow\n\nHow do we really know this is working correctly? Let's test to ensure that users that authenticate with a password are still challenged for MFA.\n1. Log out of the application.\n1. Select the **Login** link again.\n1. This time select **Sign up**.\n1. Select **Continue without passkeys**.\n1. Enter a password and select **Continue**.\n1. You will now be prompted to enroll in MFA, since the MFA challenge has been triggered.\n\n\n**Note:** You won't be able to enroll in the One-time passcode (OTP) SMS factor on your non-production Auth0 tenant, we just used this to demonstrate that the MFA challenge is actually triggered with password authentication, but not with passcode authentication."
+    },
+    {
+      "title": "Clean up",
+      "description": "## Clean up\n\nIf you plan on completing additional Auth0 labs, you will want to perform the following clean-up step:\n\n1. In your Auth0 tenant, go to **Application** > **Applications**.\n2. Select **Lab: Web App**.\n3. Scroll down to the **Danger Zone**, and select **Delete**.\n4. Follow the instructions to delete the registered application."
+    },
+    {
+      "title": "Recap",
+      "description": "## Recap\n\nIn this section you:\n1. Enabled and configured MFA on your Auth0 tenant.\n1. Wrote and deployed a post-login Action that skips MFA if an end user has authenticated with a passkey.\n1. Tested the passkey login flow to confirm MFA is skipped.\n\nRemember, if MFA is enabled on your tenant, an end user may be prompted to complete an MFA challenge after authenticating with a passkey based on settings and risk assessment.\n\nThe default behavior is to require the completion of an MFA challenge regardless if the authentication method used was a password or a passkey. Given the high level of security passkeys provide, you may want to skip MFA for users that have authenticated with a passkey in order to reduce friction. This can be achieved by using a post-login Action."
+    }
+  ]
+}

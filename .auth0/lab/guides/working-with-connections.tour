@@ -32,7 +32,7 @@
       "file": "",
       "line": 1,
       "title": "Enable an application to use the database connection",
-      "description": "## Enable an application to use the database connection\n\nNow that you've created a new Auth0 Database Connection, let's enable an application to use the connection.\n\n1. From the Travel0-Users page, select the **Applications** page.\n\n1. Select to the **Applications tab** and toggle on the **Lab: Web App** application.  \n",
+      "description": "## Enable an application to use the database connection\n\nNow that you've created a new Auth0 Database Connection, let's enable an application to use the connection.\n\n1. From the Travel0-Users page, select the **Applications** tab.\n\n1. Toggle on the **Lab: Web App** application.  \n",
       "selection": {
         "start": {
           "line": 87,

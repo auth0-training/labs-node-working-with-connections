@@ -46,7 +46,7 @@
     },
     {
       "title": "Disable all other connections for the application",
-      "description": "## Disable all other connections for the application\n\nTo ensure we're only allowing users registered for our new connection to connect to the Lab: Web App application, let's disable all other connections for this application.\n\n      \n1. Go to **Applications > Lab: Web App > Connections**. \n    \n1. **Disable** any enabled connections for this application **EXCEPT** for **Travel0-Users**.\n"
+      "description": "## Disable all other connections for the application\n\nTo ensure we're only allowing users registered for our new connection to connect to the Lab: Web App application, let's disable all other connections for this application.\n\n      \n1. Go to **Applications > Applications > Lab: Web App > Connections**. \n    \n1. **Disable** any enabled connections for this application **EXCEPT** for **Travel0-Users**.\n"
     },
     {
       "title": "Learn about Passkey Authentication Prerequisites",

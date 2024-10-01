@@ -26,7 +26,7 @@
       "file": "",
       "line": 1,
       "title": "Create a new Auth0 database connection",
-      "description": "## Create a new Auth0 database connection\n \n\n1. 1. #### Sign in to your Auth0 Management Dashboard and make sure you're working in your default _dev-_ tenant.\n1. Navigate to **Authentication > Database**, then click **Create DB Connection**.\n    ![Navigate to the create DB button](https://cdn.auth0.com/website/a0fun/v2/connections-13.gif)   \n    The New Database Connection screen is displayed.  \n      \n1. Enter **Travel0-Users** as the **name** for this database connection.\n\n1. Toggle on **Email Address** as an identifier. Leave everything else as default.\n\n1. Select the **Create** button.\n"
+      "description": "## Create a new Auth0 database connection\n \n\n1. Sign in to your [Auth0 Management Dashboard](https://manage.auth0.com/) and make sure you're working in your default _dev-_ tenant.\n1. Navigate to **Authentication > Database**, then click **Create DB Connection**.\n    ![Navigate to the create DB button](https://cdn.auth0.com/website/a0fun/v2/connections-13.gif)   \n    The New Database Connection screen is displayed.  \n      \n1. Enter **Travel0-Users** as the **name** for this database connection.\n\n1. Toggle on **Email Address** as an identifier. Leave everything else as default.\n\n1. Select the **Create** button.\n"
     },
     {
       "file": "",

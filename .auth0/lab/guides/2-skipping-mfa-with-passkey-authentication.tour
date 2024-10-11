@@ -12,7 +12,7 @@
     },
     {
       "title": "Create a new post-login Action",
-      "description": "## Create a new post-login Action\n1. Within your Auth0 tenant, go to **Actions** > **Flows**.\n2. Select **Login**.\n3. In the Add Action panel, select **Custom**.\n4. Select **Create Action**. (**Note:** If you already have already created at least one Action on this tenant, you will instead see a **+** button to create a new Action, and you will need to subsequently select **Build from scratch**).\n5. In the Create Action form, enter **Skip MFA with Passkey Authentication** as the **Name**.\n6. Leave the rest of the fields as the default values, and select **Create**."
+      "description": "## Create a new post-login Action\n1. Within your Auth0 tenant, go to **Actions** > **Trigger**.\n2. Select **post-login**.\n3. In the Add Action panel, select **Custom**.\n4. Select **Create Action**. (**Note:** If you already have already created at least one Action on this tenant, you will instead see a **+** button to create a new Action, and you will need to subsequently select **Build from scratch**).\n5. In the Create Action form, enter **Skip MFA with Passkey Authentication** as the **Name**.\n6. Leave the rest of the fields as the default values, and select **Create**."
     },
     {
       "file": ".auth0/lab/skipMFA.js",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "title": "Add the post-login Action to your login flow",
-      "description": "## Test the passkey login flow\n1. In your Auth0 tenant, where you just deployed your post-login Action, select the **Back to flow** link.\n2. From the Add Action panel, select **Custom**.\n3. You should now see your newly deployed Action in this list. Select and drag it into the Login flow (a *Drop here* hint should appear where you can drag it).\n4. Select **Apply**."
+      "title": "Add the post-login Action to your post-login trigger",
+      "description": "## Add the post-login Action to your post-login trigger\n1. In your Auth0 tenant, where you just deployed your post-login Action, select the **Back to trigger** link.\n2. From the Add Action panel, select **Custom**.\n3. You should now see your newly deployed Action in this list. Select and drag it into the post-login trigger (a *Drop here* hint should appear where you can drag it).\n4. Select **Apply**."
     },
     {
       "title": "Test the passkey login flow",

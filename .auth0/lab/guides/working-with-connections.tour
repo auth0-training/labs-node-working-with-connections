@@ -86,7 +86,7 @@
     },
     {
       "title": "Sign up for the application",
-      "description": "## Sign up for the application using passkeys\n1. In the web app, click the **Login** link in the upper right-hand corner.    \n\n1. Select the **Sign up** link. \n\n1. Enter an email address that you have access to and select **Continue**.\n\n1. On the following screen, select the **Create a Passkey** button.\n\n1. When the browser pops up a dialog box, select **Continue** and follow any on-screen directions.\n\n1. You will now be logged in to the application.\n\n"
+      "description": "## Sign up for the application using passkeys\n1. In the web app, click the **Login** link in the upper right-hand corner.    \n\n1. Select the **Sign up** link. \n\n1. Enter an email address that you have access to and select **Continue**.\n\n1. On the following screen, select the **Create a Passkey** button.\n\n1. When the browser pops up a dialog box, select **Continue** and follow any on-screen directions.\nDepending on your OS and device (mobile phone or laptop), things can differ, but the general idea remains the same: you need to choose how to create and store your passkey. It can be a hardware device like a security key, your laptop, or a smartphone or can be software, for example, with Chrome using your Google Account, using Apple's keychain, or password managers with passkey support like 1Password.\nFor quick setup, you can choose a built-in functionality to create a passkey, which you'll normally confirm with a method such as biometrics or a PIN.\n\n1. You will now be logged in to the application.\n\n"
     },
     {
       "title": "Test passkey login with the Passkey Button",

@@ -15,7 +15,7 @@ In this [Okta Training](https://www.okta.com/training/) hands-on lab, you'll lea
 
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
-2. An Auth0 account: You'll also need an Auth0 account. If you do not already have one, you can create a free one [here](https://auth0.com/signup).
+2. An Auth0 account: You'll also need an Auth0 account. You should use a new account for our labs so that you have a fresh tenant. Register for one [here](https://auth0.com/signup).
 
 ## Accessing and Working with Auth0 Labs
 

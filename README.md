@@ -1,6 +1,6 @@
 # Lab: Authenticate with Auth0 Database and Passwordless Connections
 
-A connection is a relationship between Auth0 and a source of users. In this [Okta Training](https://www.okta.com/training/) hands-on lab, learners will practice the necessary steps to enable a Social connection.
+A connection is a relationship between Auth0 and a source of users. In this [Okta Training](https://www.okta.com/training/) hands-on lab, learners will practice the necessary steps to configure database and passwordless connections.
 
 --- 
 

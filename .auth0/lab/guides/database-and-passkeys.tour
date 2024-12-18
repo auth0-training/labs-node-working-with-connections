@@ -1,0 +1,93 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2: Enabling Passkeys for Your Database Connection",
+  "nextTour": "3: BONUS: Using Actions to Skip MFA for Passkey Authentication",
+  "steps": [
+    {
+      "file": "",
+      "line": 1,
+      "title": "What you'll do",
+      "description": "## Here's what you'll do:  \n\n*   Create a new Auth0 Database Connection.\n*   Enable passkeys for this connection.\n*   Configure your a passkey policy for this connection.\n\n\n[Passkeys](https://auth0.com/docs/authenticate/database-connections/passkeys) are a phishing-resistant alternative to traditional authentication methods (such as passwords) that offer an easier and more secure login experience to users.\n"
+    },
+    {
+      "file": "",
+      "line": 1,
+      "title": "Create a new Auth0 database connection",
+      "description": "## Create a new Auth0 database connection\n \n\n1. Sign in to your [Auth0 Management Dashboard](https://manage.auth0.com/) and make sure you're working in your default _dev-_ tenant.\n1. Navigate to **Authentication > Database**, then click **Create DB Connection**.\n    ![Navigate to the create DB button](https://cdn.auth0.com/website/a0fun/v2/connections-13.gif)   \n    The New Database Connection screen is displayed.  \n      \n1. Enter **Travel0-Users** as the **name** for this database connection.\n\n1. Toggle on **Email Address** as an identifier. Leave everything else as default.\n\n1. Select the **Create** button.\n"
+    },
+    {
+      "file": "",
+      "line": 1,
+      "title": "Enable an application to use the database connection",
+      "description": "## Enable an application to use the database connection\n\nNow that you've created a new Auth0 Database Connection, let's enable an application to use the connection.\n\n1. From the Travel0-Users page, select the **Applications** tab.\n\n1. Toggle on the **Lab: Web App** application.  \n",
+      "selection": {
+        "start": {
+          "line": 87,
+          "character": 50
+        },
+        "end": {
+          "line": 87,
+          "character": 107
+        }
+      }
+    },
+    {
+      "title": "Disable all other connections for the application",
+      "description": "## Disable all other connections for the application\n\nTo ensure we're only allowing users registered for our new connection to connect to the Lab: Web App application, let's disable all other connections for this application.\n\n      \n1. Go to **Applications > Applications > Lab: Web App > Connections**. \n    \n1. **Disable** any enabled connections for this application **EXCEPT** for **Travel0-Users**.\n"
+    },
+    {
+      "title": "Learn about Passkey Authentication Prerequisites",
+      "description": "## Learn about Passkey Authentication Prerequisites\n1. Go to **Authentication > Database > Travel0-Users**.\n1. Select the **Authentication Methods** tab.\n1. Select the **Configure** link next to the Passkey toggle button to open the Passkey Policy page.\n1. Select the **Passkey Authentication Prerequisites** section to expand it. \n\n**Note:** You will not be able to enable passkeys for your database connection until all requirements are met! This is indicated by a `DONE` tag. If any requirements are `PENDING`, follow the corresponding link in the **Passkey Authentication Prerequisites** section to update your tenant configurations before moving on.\n\nFor example, if your tenant is configured to use _Identifier First + Password_ login flow, you will need to select the _Identifier First login flow_ link and enable **Identifier First**.\n\n",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 1
+        },
+        "end": {
+          "line": 4,
+          "character": 100
+        }
+      }
+    },
+    {
+      "title": "Enable passkeys for the connection",
+      "description": "## Enable passkeys for the connection\n\n1. Go to **Authentication > Database > Travel0-Users**.\n1. Select the **Authentication Methods** tab.\n1. Toggle on the **Passkey** option."
+    },
+    {
+      "title": "Configure the passkey policy",
+      "description": "## Configure the passkey policy\n\n1. Select the **Configure** link next to the Passkey toggle button to open the Passkey Policy page.\n2. Note that the **Passkey Authentication Prerequisites** section is tagged `READY` since all the requirements to using passkeys on this connection have been satisfied.\n3. Scroll down to view the policy settings:\n    - _Passkey Challenge_: Defines how a user can trigger passkey authentication during login and signup on the Universal Login page. Options include: Autofill, Passkey Button, or Both. The **Both** option is enabled by default.\n    - _Progressive Enrollment_: Enabled by default. When enabled, a user who has not yet created a passkey is prompted to create one after logging in with their email and password. This is helpful if you want to start migrating your existing users to passkeys.\n    - _Local Enrollment_: Enabled by default. When enabled, existing users are prompted to create a local passkey when using a cross-device passkey to log in to a new device. Users can choose to skip this action to continue to use cross-device passkeys.\n"
+    },
+    {
+      "title": "Launch the sample application (Lab: Web App) ",
+      "description": "## Check that the sample application is still running (Lab: Web App)\n\n**Your application should still be running, but if not, you can use the steps below to launch it again.**\n\n1. Click [here](command:workbench.action.debug.start) to launch the application locally.\n    - Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open it in your browser.\n\n1. Ensure the port for the web app (37500) is set to public. \n    - Click the **PORTS** tab below.\n    - Right click **37500** under the Ports column.\n    - Select **Port Visibility** > **Public**.\n    *Note: You will need to repeat these steps if you restart your Codespace.*\n\n    ![](https://cdn.auth0.com/website/auth0/labs/ilt/public-ports.gif)\n",
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 1
+        }
+      }
+    },
+    {
+      "title": "Sign up for the application",
+      "description": "## Sign up for the application using passkeys\n1. In the web app, click the **Login** link in the upper right-hand corner.    \n\n1. Select the **Sign up** link. \n\n1. Enter an email address that you have access to and select **Continue**.\n\n1. On the following screen, select the **Create a Passkey** button.\n\n1. When the browser pops up a dialog box, select **Continue** and follow any on-screen directions.\nDepending on your OS and device (mobile phone or laptop), things can differ, but the general idea remains the same: you need to choose how to create and store your passkey. It can be a hardware device like a security key, your laptop, or a smartphone or can be software, for example, with Chrome using your Google Account, using Apple's keychain, or password managers with passkey support like 1Password.\nFor quick setup, you can choose a built-in functionality to create a passkey, which you'll normally confirm with a method such as biometrics or a PIN.\n\n1. You will now be logged in to the application.\n\n"
+    },
+    {
+      "title": "Test passkey login with the Passkey Button",
+      "description": "## Test passkey login with the Passkey Button\n1. Log out of the application by selecting the **Logout** link.\n1. Select the **Login** link again.\n1. This time, select the **Continue with Passkey** button.\n1. Your browser will pop up a dialog box; select the passkey you generated previously and authenticate with it.\n1. In a few moments, you should be logged in to the application."
+    },
+    {
+      "title": "Test passkey login with Autofill",
+      "description": "## Test passkey login with Autofill\n1. Log out of the application by selecting the **Logout** link.\n1. Select the **Login** link again.\n1. This time, select the **Email Address** box, and you should notice the autofill for your browser pop up.\n1. Select the passkey you generated previously from the autofill menu, and authenticate with it.\n1. In a few moments, you should be logged in to the application.\n1. **Important:** Log out of the application before moving on. Keep the application running for now."
+    },
+    {
+      "file": "",
+      "line": 1,
+      "title": "Recap",
+      "description": "## Recap\n\nIn this section you:\n\n*   Created a new Auth0 Database Connection.\n*   Enabled passkeys for this connection.\n*   Configured your a passkey policy for this connection.\n\n[Passkeys](https://auth0.com/docs/authenticate/database-connections/passkeys) are a phishing-resistant alternative to traditional authentication methods (such as passwords) that offer an easier and more secure login experience to users."
+    }
+  ]
+}

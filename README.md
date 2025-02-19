@@ -1,6 +1,6 @@
 # Authenticate with Auth0 Social and Enterprise Connections
 
-A connection is a relationship between Auth0 and a source of users. In this [Okta Training](https://www.okta.com/training/) hands-on lab, learners will practice the necessary steps to enable a Social connection.
+A connection is a relationship between Auth0 and a source of users. In this [Okta Learning](https://learning.okta.com) hands-on lab, learners will practice the necessary steps to enable a Social connection.
 
 --- 
 

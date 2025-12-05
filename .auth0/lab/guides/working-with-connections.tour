@@ -37,15 +37,15 @@
     },
     {
       "title": "Launch the sample application (Lab: Web App) and test social login",
-      "description": "## Launch the sample application (Lab: Web App) and test social login\n\n1. #### Click [here](command:workbench.action.debug.start) to launch the application locally.\n    - Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. #### Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open it in your browser.\n\n1. #### Ensure the port for the web app (37500) is set to public. \n    - Click the **PORTS** tab below.\n    - Right click **37500** under the Ports column.\n    - Select **Port Visibility** > **Public**.\n    *Note: You will need to repeat these steps if you restart your Codespace.*\n",
+      "description": "## Launch the sample application (Lab: Web App) and test social login\n\n1. #### Click [here](command:workbench.action.debug.start) to launch the application locally.\n    - Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. #### Ensure the port for the web app (37500) is set to public. \n    - Click the **PORTS** tab below.\n    - Right click **37500** under the Ports column.\n    - Select **Port Visibility** > **Public**.\n    *Note: You will need to repeat these steps if you restart your Codespace.*\n\n1. #### Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open it in your browser.\n\n\n",
       "selection": {
         "start": {
-          "line": 1,
-          "character": 4
+          "line": 7,
+          "character": 1
         },
         "end": {
-          "line": 1,
-          "character": 70
+          "line": 11,
+          "character": 1
         }
       }
     },

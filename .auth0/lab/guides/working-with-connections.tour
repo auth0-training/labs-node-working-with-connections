@@ -1,18 +1,18 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "1: Authenticate with Social Connections",
+  "title": "1: Authenticate with a social connection",
   "steps": [
     {
-      "title": "Set Up Tenant and Local Configurations for this Lab",
-      "description": "## Set Up Tenant and Local Configurations for this Lab\n\n\n1. #### Click [here](command:auth0.lab.tenantConfigure) to ensure that your Auth0 tenant is configured appropriately for this lab (Note: this will update the *Callback URL* for the *Lab: Web App* application in your tenant). \n    Wait until you see the message that `resources.xml` has been successfully deploy before continuing to the next step.\n    ![resources deployed message](https://cdn.auth0.com/website/a0fun/v2/resources.png) \n1. #### Click [here](command:auth0.lab.localConfigure) to ensure that your application configurations are set locally (creates `.env` file under `src/web-app`).\n",
+      "title": "Set up tenant and local configurations for this lab",
+      "description": "## Set up tenant and local configurations for this lab\n\n\n1. Select [this link](command:auth0.lab.tenantConfigure) to configure your Auth0 tenant for this lab. This will register a Regular Web Application named **Lab: Web App** (if it doesn't already exist) in the tenant you authorized with the Auth0 Labs extension. It will also update the Allowed Callback URLs for your application.\n>Wait until you see the message that `resources.xml` has been successfully deploy before continuing to the next step.\n\n    ![resources deployed message](https://cdn.auth0.com/website/a0fun/v2/resources.png) \n1. Select [this link](command:auth0.lab.localConfigure) to configure your local environment. This creates `.env` file under the `src/web-app` directory with the appropriate environment variables and values for integrating with Auth0.\n\n    These include:\n    - `ISSUER_BASE_URL`\n    - `CLIENT_ID`\n    - `CLIENT_SECRET`\n\n1. If you do not see the `.env` file created in `src/web-app`, check the following:\n    - You authorized the Auth0 Labs extension with your Auth0 Tenant in the first step of this lab.\n    \n     > See https://auth0-training.github.io/#im-missing-an-env-file-for-my-application--my-application-doesnt-launch for more troubleshooting details.\n",
       "selection": {
         "start": {
-          "line": 4,
-          "character": 131
+          "line": 1,
+          "character": 4
         },
         "end": {
-          "line": 4,
-          "character": 226
+          "line": 2,
+          "character": 1
         }
       }
     },
@@ -20,13 +20,13 @@
       "file": "",
       "line": 1,
       "title": "What you'll do",
-      "description": "## Here's what you'll do:  \n\n*   Enable GitHub as a social connection for your Web App\n\nA connection is a relationship between Auth0 and a source of users, which may include identity providers (such as Google or LinkedIn), databases, or passwordless authentication methods. Auth0 sits between your application and its sources of users, which adds a level of abstraction so your application is isolated from any changes to and idiosyncrasies of each source's implementation."
+      "description": "## Here's what you'll do:  \n\n*   Enable GitHub as a social connection for your web app\n\nA connection is a relationship between Auth0 and a source of users, which may include identity providers (such as Google or LinkedIn), databases, or passwordless authentication methods. Auth0 sits between your application and its sources of users, which adds a level of abstraction so your application is isolated from any changes to and idiosyncrasies of each source's implementation."
     },
     {
       "file": "",
       "line": 1,
-      "title": "Enable GitHub as a social connection for your web app",
-      "description": "## Enable GitHub as a social connection for your web app\n\nIn this lab, you will walk through how to enable a Social connection as if you had an actual social media developer account.  \n  \nIf you were working in a production environment, before connecting your Auth0 app to a third-party service (in this example, GitHub,) [you would need to have a Developer account](https://auth0.com/docs/connections/social/github) with the third party.  \n  \nHowever, for the lab, you will only enable the GitHub social connection and test the login screen to see the result. You will _not_ configure the GitHub Client ID and Client Secret as part of this lab, [as you would for a production environment](https://auth0.com/docs/get-started/dashboard/set-up-social-connections).  \n  \n1. #### Open your Auth0 Dashboard and make sure you're working in your default _dev-_ tenant.  \n    \n1. #### Remind yourself what the current login experience looks like by going to [**Authentication** > **Authentication Profile**](https://manage.auth0.com/dashboard/#/authentication-profiles) and selecting **Try**.\n    - If you do not see the login page, you probably have an authentication cookie set from previous exercises. You can force a logout by visiting [_https://{tourTenantName}.{yourRegion}.auth0.com/api/v2/logout_](https://your-tenant.region.auth0.com/v2/logout).     \n    - _Tip:_ Your tenant url including the tenant name and region is helpfully located at the bottom of the Visual Studio Code window! (Auth0: yourTenantName.yourRegion.auth0.com)     \n\n1. #### Return to the dashboard and click _Authentication_ in the left-hand navigation. The navigation expands to show the four types of connections:\n    \n    1. Database\n    1. Social\n    1. Enterprise\n    1. Passwordless      \n    1. Authentication Profile\n     \n1. #### Click _Social_.\n    * Here, you can see the social connections for your tenant. Note that the Google connection is enabled by default. \n    * You should avoid using the \"Continue with Google\" button while completing the labs. The seamless SSO (Single Sign On) experience may skip over the Login page at times when you want to see it.\n\n1. #### Click _Create Connection_, then type GitHub in the search field, and select it.\n    The _GitHub Social Connection_ page is displayed. This details the items GitHub will need access to in your tenant.  \n    \n1. #### Click _Continue._  \n    \n    - On the GitHub Social Connection page, you will see the fields for:  \n        1.  Client ID key\n        1.  Client Secret key    \n    - These fields state “Leave blank to use Auth0 dev keys” - this will allow you to test out the social connection without obtaining your own Key and Secret. If you were working on a production application, you would need to obtain your own keys.  \n        \n1. #### Keep the default settings, and click _Create_. \n    The GitHub connection _Applications_ tab is displayed.    \n    Now, we'll choose which applications will use the GitHub social connection: for this exercise, we'll select the _Lab: Web App_.  \n\n1. #### Click the toggle switch to the right of the application in the list.  \n\n    \n1. #### Next, click the breadcrumb link to go back to the _Social_ connections list.\n    - Note the warning icon next to GitHub In the list of social connections. Hover over the warning icon, and you’ll see a popover message “Active with Auth0 Dev Keys\".\n1. #### Click the GitHub entity, and the settings page is displayed, with a _warning_ message:\n    - This connection is using Auth0 development keys. Auth0 development keys are intended for testing and are not recommended for Production environments. This connection should be configured with your own keys to enable SSO, federated logout, and other features.  \n    [__Auth0 development keys are not recommended for Production environments__](https://auth0.com/docs/connections/social/devkeys)__.__  ",
+      "title": "Log in to your Auth0 dashboard and preview the current login experience",
+      "description": "## Log in to your Auth0 dashboard and preview the current login experience\n\nBefore we enable GitHub as a social connection for our application, let's look at the current login experience.\n  \n1. Log in to your Auth0 Dashboard at https://manage.auth0.com. \n> If you have more than one tenant, make sure you have your default **dev-** tenant selected.  \n    \n1. Go to  **Authentication** > **Authentication Profile**.\n1. Select the **Try** button. You should now see the Universal Login page open in a new window.\n1. Close the Universal Login page once you have seen the current login experience.",
       "selection": {
         "start": {
           "line": 16,
@@ -39,8 +39,16 @@
       }
     },
     {
+      "title": "Enable GitHub as a social connection",
+      "description": "## Enable GitHub as a social connection\n\nIn this lab, you will walk through how to enable a Social connection as if you had an actual social media developer account.  \n  \nIf you were working in a production environment, before connecting your Auth0 app to a third-party service (in this example, GitHub,) [you would need to have a Developer account](https://auth0.com/docs/connections/social/github) with the third party.  \n  \nHowever, for the lab, you will only enable the GitHub social connection and test the login screen to see the result. You will _not_ configure the GitHub Client ID and Client Secret as part of this lab, [as you would for a production environment](https://auth0.com/docs/get-started/dashboard/set-up-social-connections).  \n\n\n1. From the Auth0 Dashboard, go to **Authentication** > **Social**.\n> You can see any existing social connections for your tenant. Google (google-oauth2) is enabled by default.\n\n1. Select **Create Connection**.\n\n1. In the search field, search for **GitHub** and select it.\n> The next page explains the permissions GitHub will have on your tenant.\n    \n1. Select **Continue**.\n    \n1. On the next page, you can configure your new GitHub Social Connection. Keep all of the default values here, including the **“Leave blank to use Auth0 dev keys”** for **Client ID** and **Client Secret**.\n> If you were working in a production environment, before connecting your Auth0 app to a third-party service (in this example, GitHub,) [you would need to have a Developer account](https://auth0.com/docs/connections/social/github) with the third party, and you would enter in your **Client ID** and **Client Secret** associated with an app on your account.\n        \n1. Select **Create**.\n   \n\nNext, we'll configure which applications can use this connection."
+    },
+    {
+      "title": "Configure your app to use the GitHub social connection",
+      "description": "## Configure your app to use the GitHub social connection\n\n 1. You should now see your new social connection named **github** and you should now be on the **Applications** tab of its configuration details.\n\n1.  Select the toggle switch to the right of **Lab: Web App** to toggle it on.  \n\n1. Select the **Settings** tab.\n    > Note the expected warning message here that states:\n    \n    >\"This connection is using Auth0 development keys. Auth0 development keys are intended for testing and are not recommended for Production environments. This connection should be configured with your own keys to enable SSO, federated logout, and other features. [More information about Social Connection developer keys](https://auth0.com/docs/connections/social/devkeys)\".\n\n    > This is OK since we are in a non-production environment for the purpose of this lab."
+    },
+    {
       "title": "Launch the sample application (Lab: Web App) and test social login",
-      "description": "## Launch the sample application (Lab: Web App) and test social login\n\n1. #### Click [here](command:workbench.action.debug.start) to launch the application locally.\n    - Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. #### Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open it in your browser.\n\n1. #### Ensure the port for the web app (37500) is set to public. \n    - Click the **PORTS** tab below.\n    - Right click **37500** under the Ports column.\n    - Select **Port Visibility** > **Public**.\n    *Note: You will need to repeat these steps if you restart your Codespace.*\n\n    ![](https://cdn.auth0.com/website/auth0/labs/ilt/public-ports.gif)\n1. #### In the sample app, click the login link in the top right.\n    The application redirects to Auth0 for login.\n1. #### Scroll down - you should see the _Continue with GitHub_ button. \nCongratulations! The _Continue with GitHub_ option should now show up on the application's login box.",
+      "description": "## Launch the sample application (Lab: Web App) and test social login\n\n1. Select [this link](command:workbench.action.debug.start) to launch the application locally.\n    >Wait a moment for the application to launch. You can see the progress in the debug console.\n\n1. Ensure the port for the web app (37500) is set to public. \n    - Click the **PORTS** tab below.\n    - Right click **37500** under the Ports column.\n    - Select **Port Visibility** > **Public**.\n    >Note: You will need to repeat these steps if you restart your Codespace.\n\n    ![](https://cdn.auth0.com/website/auth0/labs/ilt/public-ports.gif)\n\n1. Select [this link](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open the sample app in your browser.\n\n1. In the sample app, select the login link in the top right.\n    >The application redirects to Auth0 for login.\n\n1. You should see the **Continue with GitHub** button rendered on the Universal Login page. \n\n",
       "selection": {
         "start": {
           "line": 1,
@@ -53,10 +61,8 @@
       }
     },
     {
-      "file": "",
-      "line": 1,
-      "title": "Recap",
-      "description": "## Recap\n\nIn this lab you:\n\n*   Enabled GitHub as a social connection for your Web App."
+      "title": "What you did",
+      "description": "## What you did\n\nIn this lab you:\n\n*   Enabled GitHub as a social connection for your web app."
     }
   ]
 }

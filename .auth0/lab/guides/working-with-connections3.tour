@@ -1,0 +1,32 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "3: Bulk import users to a database connection",
+  "steps": [
+    {
+      "file": "",
+      "line": 1,
+      "title": "Add new users to the database using bulk migration",
+      "description": "## Add new users to the database using bulk migration\n\nAuth0 supports importing users from external applications using Custom Database connections, the Auth0 Management API, or Auth0 Dashboard.\nIn this exercise, you will perform a bulk user import using the Auth0 Dashboard. Bulk imports are useful for migrating users from an existing database or service to Auth0. \n\n1. From the Auth0 Dashboard, go to **User Management** > **Users**.\n\n1. Select the **Import/Export Users** button and then select **Import Users**.\n\n1. This feature requires a specially formatted JSON file. Select this link to download the file to use for this lab: https://raw.githubusercontent.com/auth0/auth0-product-education-labs/main/data/bulk-import-users.json\n\n1. Select the **Choose File** button and select the JSON file you just downloaded.\n\n1. Under the **Connection** section, select **Contoso-Users** from the drop-down menu.\n\n1. Select the **Import Users** button.",
+      "selection": {
+        "start": {
+          "line": 87,
+          "character": 50
+        },
+        "end": {
+          "line": 87,
+          "character": 107
+        }
+      }
+    },
+    {
+      "title": "Check that the users were imported",
+      "description": "## Check that the users were successfully imported. \n1. From the Auth0 Dashboard, go to **User Management** > **Users**.\n1. You should see the newly imported users with a value of **Contoso-Users** under the *Connection* column.\n![return and view the users in the database](https://cdn.auth0.com/website/a0fun/v2/connections-23.gif)  \n\n1. Clean-up: Enable the User-Password-Authentication Database Connection again.\n    1. Go to **Applications** > **Applications** > **Lab: Web App**.\n    1. Select the **Connections** tab.\n    1. Toggle on **User-Password-Authentication**.\n"
+    },
+    {
+      "file": "",
+      "line": 1,
+      "title": "Recap",
+      "description": "## Recap\n\nIn this lab you:\n\n*   Enabled GitHub as a social connection for your Web App.\n*   Created a new Auth0 Database\n*   Added the User Import / Export Extension to your tenant\n*   Imported new users to the new database using bulk migration/user import."
+    }
+  ]
+}

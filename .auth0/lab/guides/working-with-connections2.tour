@@ -1,6 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "2: Create a database connection",
+  "nextTour": "3: Bulk import users to a database connection",
   "steps": [
     {
       "file": "",

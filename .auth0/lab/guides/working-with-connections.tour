@@ -1,6 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "1: Create a social connection",
+  "nextTour": "2: Create a database connection",
   "steps": [
     {
       "title": "Set up tenant and local configurations for this lab",

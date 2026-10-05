@@ -1,0 +1,20 @@
+
+## Register the RetailZero API with your Auth0 tenant
+
+1. Open the [Auth0 Dashboard](https://manage.auth0.com) and go to **Applications** > **APIs**.
+1. Create a new API integration with the following settings:
+    - **Name**: RetailZero API
+    - **API Audience**: `https://retailzero-api`
+    >Note: Your local Z-Assistant application's `.env` file already has `RETAILZERO_API_AUDIENCE=https://retailzero-api/` set.
+    - All other settings can be kept as the default.
+
+
+
+
+4. Select the **Permissions** tab and review the four scopes:
+   - `read:catalog` — product catalog
+   - `read:orders` — customer orders
+   - `read:customer-profile` — private PII
+   - `write:refunds` — process refunds
+
+These scopes represent what the AI agent is allowed to do. The access token issued via token exchange will carry only the scopes that are requested and permitted.

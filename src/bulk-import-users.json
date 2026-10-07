@@ -1,20 +1,120 @@
-
-## Register the RetailZero API with your Auth0 tenant
-
-1. Open the [Auth0 Dashboard](https://manage.auth0.com) and go to **Applications** > **APIs**.
-1. Create a new API integration with the following settings:
-    - **Name**: RetailZero API
-    - **API Audience**: `https://retailzero-api`
-    >Note: Your local Z-Assistant application's `.env` file already has `RETAILZERO_API_AUDIENCE=https://retailzero-api/` set.
-    - All other settings can be kept as the default.
-
-
-
-
-4. Select the **Permissions** tab and review the four scopes:
-   - `read:catalog` — product catalog
-   - `read:orders` — customer orders
-   - `read:customer-profile` — private PII
-   - `write:refunds` — process refunds
-
-These scopes represent what the AI agent is allowed to do. The access token issued via token exchange will carry only the scopes that are requested and permitted.
+[
+    {
+        "given_name": "Antoinette",
+        "family_name": "Doe",
+        "name": "Antoinette Doe",
+        "email": "antoinette@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "md4",
+            "hash": {
+                "value": "AbuUujgF0pPPkJPSFRTpmA==",
+                "encoding": "base64"
+            }
+        }
+    },
+    {
+        "given_name": "Mary",
+        "family_name": "Doe",
+        "name": "Mary Doe",
+        "email": "mary@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "sha256",
+            "hash": {
+                "value": "d24e794fce503c3ddb1cd1ba1dd5d9b250cf9917336a0316fefd87fecf79200f",
+                "encoding": "hex"
+            },
+            "salt": {
+                "value": "abc123",
+                "position": "prefix"
+            }
+        }
+    },
+    {
+        "given_name": "Velma",
+        "family_name": "Doe",
+        "name": "Velma Doe",
+        "email": "velma@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "bcrypt",
+            "hash": {
+                "value": "$2b$10$C9hB01.YxRSTcn/ZOOo4j.TW7xCKKFKBSF.C7E0xiUwumqIDqWUXG"
+            }
+        }
+    },
+    {
+        "given_name": "Edward",
+        "family_name": "Doe",
+        "name": "Edward Doe",
+        "email": "edward@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "argon2",
+            "hash": {
+                "value": "$argon2id$v=19$m=65536,t=2,p=1$J6Q/82PCyaNpYKRELJyTZg$m04qUAB8rexWDR4+/0f+SFB+4XMFxt7YAvAq2UycYos"
+            }
+        }
+    },
+    {
+        "given_name": "Terrell",
+        "family_name": "Doe",
+        "name": "Terrell Doe",
+        "email": "terrell@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "pbkdf2",
+            "hash": {
+                "value": "$pbkdf2-md4$i=100000,l=64$+N375B8q0Fw$fp2R9KAM4hK/votGHC5Fu+jhqbxUD8+Nic/EMSGvNC3UP/k7wSHI0uXluHRSkZfl/BOheYqNOemayG90ZaSSQw",
+                "encoding": "utf8"
+            }
+        }
+    },
+    {
+        "given_name": "Cecil",
+        "family_name": "Doe",
+        "name": "Cecil Doe",
+        "email": "cecil@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "pbkdf2",
+            "hash": {
+                "value": "$pbkdf2-sha512$i=100000,l=64$KNyFsA2rWoE$I2CQGI9H0JxdDf3kERRI97kPCGxh0KWBIV3MxyaS191gDGfzVBGyS4BibhgqWQ0/ails8mHuU9ckASxHOOq58w"
+            }
+        }
+    },
+    {
+        "given_name": "Sean",
+        "family_name": "Doe",
+        "name": "Sean Doe",
+        "email": "sean@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "ldap",
+            "hash": {
+                "value": "{SSHA384}/cgEjdoZh85DhurDeOQEMO1rMlAur93SVPbYe5XSD4lF7nNuvrBju5hUeg9A6agRemgSXGl5YuE=",
+                "encoding": "utf8"
+            }
+        }
+    },
+    {
+        "given_name": "Peter",
+        "family_name": "Doe",
+        "name": "Peter Doe",
+        "email": "peter@contoso.com",
+        "email_verified": false,
+        "custom_password_hash": {
+            "algorithm": "hmac",
+            "hash": {
+                "value": "cg7f42jH39/2EaAU4wNd4s2lKIk=",
+                "encoding": "base64",
+                "digest": "sha1",
+                "key": {
+                    "value": "736868",
+                    "encoding": "hex"
+                }
+            }
+        }
+    }
+]
